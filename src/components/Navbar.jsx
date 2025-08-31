@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1 className="brand"><Link to="/">MoviePanel</Link></h1>
+      <h1 className="brand"><Link to="/">MoviesHub</Link></h1>
       <ul className="nav-links">
         <li className={isActive('/') ? 'active' : ''}><Link to="/">Popular</Link></li>
         <li className={isActive('/top-rated') ? 'active' : ''}><Link to="/top-rated">Top Rated</Link></li>
