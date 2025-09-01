@@ -5,6 +5,8 @@ export default defineConfig({
   plugins: [react()],
   base: './',
   server: {
-    allowedHosts: ['*'] // 👈 allow all hosts (best for sandbox environments)
+    host: true,               // ✅ listen on all addresses
+    allowedHosts: ['*'],      // ✅ allow all hosts
+    cors: true                // ✅ enable CORS (sometimes needed in sandbox)
   }
 })
